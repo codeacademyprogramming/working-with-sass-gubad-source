@@ -1,0 +1,1 @@
+***Try to create grid classes (col-1, col-2, col-md-1, col-lg-3, col-xl-5) with the help of @function, @each, @if, @else or this kind of sass features You can take Bootstrap's source code as reference if you want

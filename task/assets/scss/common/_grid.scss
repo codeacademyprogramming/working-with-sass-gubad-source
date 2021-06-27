@@ -1,0 +1,42 @@
+$screensize:xl,lg,md,sm;
+@each $screen in $screensize{
+    @if($screen==sm){
+        @media screen and (max-width:400px){
+            @for $i from 1 through 12{
+                .col-#{$screen}-#{$i}{
+                    width: 100%/12*$i;
+                }
+            }
+            body{
+                background-color: red;
+            }
+        }
+    }
+  @else if($screen==md){
+      @media screen and (max-width:650px){
+          @for $i from 1 through 12{
+              .col-#{$screen}-#{$i}{
+                  width:100%/12*$i;
+              }
+          }
+      }
+  }
+  @else if($screen==lg){
+    @media screen and (max-width:1050px){
+        @for $i from 1 through 12{
+            .col-#{$screen}-#{$i}{
+                width:100%/12*$i;
+            }
+        }
+    }
+}
+@else if($screen==xl){
+    @media screen and (max-width:1250px){
+        @for $i from 1 through 12{
+            .col-#{$screen}-#{$i}{
+                width:100%/12*$i;
+            }
+        }
+    }
+}
+}
