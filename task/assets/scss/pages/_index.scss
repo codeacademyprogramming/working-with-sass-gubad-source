@@ -1,7 +1,5 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+   @extend %user-agent-zero;
     font-family: sans-serif;
     .container {
       width: 800px;

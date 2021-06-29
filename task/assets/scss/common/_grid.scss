@@ -1,4 +1,3 @@
-
 .col-1 {
   width: calc(100% / 12 * 1);
 }
@@ -38,25 +37,23 @@
 
 $screensize: xl, lg, md, sm;
 @each $screen in $screensize {
-  @if($screen==xl){
-    @media screen and (max-width:1250px){
-        @for $i from 1 through 12{
-            .col-#{$screen}-#{$i}{
-                width:100%/12*$i;
-            }
+  @if ($screen==xl) {
+    @media screen and (max-width: 1250px) {
+      @for $i from 1 through 12 {
+        .col-#{$screen}-#{$i} {
+          width: 100%/12 * $i;
         }
-    }
-}
-@else if($screen==lg){
-  @media screen and (max-width:1050px){
-      @for $i from 1 through 12{
-          .col-#{$screen}-#{$i}{
-              width:100%/12*$i;
-          }
       }
-  }
-}
-  @else if ($screen==md) {
+    }
+  } @else if($screen==lg) {
+    @media screen and (max-width: 1050px) {
+      @for $i from 1 through 12 {
+        .col-#{$screen}-#{$i} {
+          width: 100%/12 * $i;
+        }
+      }
+    }
+  } @else if ($screen==md) {
     @media screen and (max-width: 650px) {
       @for $i from 1 through 12 {
         .col-#{$screen}-#{$i} {
@@ -64,76 +61,68 @@ $screensize: xl, lg, md, sm;
         }
       }
 
-      .disapear{
+      .disapear {
         display: none;
-     }
-     .hamburger{
-        display: block;
-     }
-     .xx-contact{
-        display: flex;
-       flex-direction: column;
       }
-      .x-contact{
+      .hamburger {
+        display: block;
+      }
+
+      .xx-contact {
         display: flex;
         flex-direction: column;
-      }
-      .city-list {
-         width: 100%;
-      }
-      .city{
-         margin-bottom: 50px;
-      }
-    .x-contact .contact-email input{
-       width: 100%;
-    }
-  
-    .container{
-       width: 100%;
-    }
-  
-    .row{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-  
-  }
-  
-  .band-portrait-image{
-     text-align: center;
-  }
-  
-  .city-image{
-     text-align: center;
-  }
-  
-  .contact-name{
-      width: 100%;
-      margin-bottom: 10px;
-  }
-  
-  .contact-name input{
-     width: 100%;
-  }
-  
-  .contact-info{
-     padding:10px 0;
-  }
-  .x-contact{
-     width: 100%;
-  }
-  
-    }
-  }
-    @else if($screen==sm){
-      @media screen and (max-width:400px){
-          @for $i from 1 through 12{
-              .col-#{$screen}-#{$i}{
-                  width: 100%/12*$i;
-              }
+        .x-contact {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .contact-name {
+            width: 100%;
+            margin-bottom: 10px;
           }
-
+        }
+        .contact-info {
+          padding: 10px 0;
+        }
       }
+
+      .city-list {
+        width: 100%;
+      }
+      .city {
+        margin-bottom: 50px;
+        .city-image {
+          text-align: center;
+        }
+      }
+      .x-contact .contact-email input {
+        width: 100%;
+      }
+
+      .container {
+        width: 100%;
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .band-portrait-image {
+        text-align: center;
+      }
+
+      .contact-name input {
+        width: 100%;
+      }
+
+    }
+  } @else if($screen==sm) {
+    @media screen and (max-width: 400px) {
+      @for $i from 1 through 12 {
+        .col-#{$screen}-#{$i} {
+          width: 100%/12 * $i;
+        }
+      }
+    }
   }
 }

@@ -1,8 +1,10 @@
-/*pages*/
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*pages*/
+* {
   font-family: sans-serif;
   /* nav */
   /* portrait */
@@ -262,34 +264,33 @@
   .xx-contact {
     display: flex;
     flex-direction: column; }
-  .x-contact {
-    display: flex;
-    flex-direction: column; }
+    .xx-contact .x-contact {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .xx-contact .x-contact .contact-name {
+        width: 100%;
+        margin-bottom: 10px; }
+    .xx-contact .contact-info {
+      padding: 10px 0; }
   .city-list {
     width: 100%; }
   .city {
     margin-bottom: 50px; }
+    .city .city-image {
+      text-align: center; }
   .x-contact .contact-email input {
     width: 100%; }
   .container {
     width: 100%; }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
+    .container .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
   .band-portrait-image {
     text-align: center; }
-  .city-image {
-    text-align: center; }
-  .contact-name {
-    width: 100%;
-    margin-bottom: 10px; }
   .contact-name input {
-    width: 100%; }
-  .contact-info {
-    padding: 10px 0; }
-  .x-contact {
     width: 100%; } }
 
 @media screen and (max-width: 400px) {
