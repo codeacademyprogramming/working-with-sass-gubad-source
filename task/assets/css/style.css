@@ -1,0 +1,336 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/*pages*/
+* {
+  font-family: sans-serif;
+  /* nav */
+  /* portrait */
+  /* cities*/
+  /*contact*/
+  /* map */
+  /* social */
+  /* not working */ }
+  * .container {
+    width: 800px;
+    margin: auto; }
+    * .container .row {
+      display: flex;
+      flex-wrap: wrap; }
+  * nav {
+    position: sticky;
+    top: 0;
+    z-index: 1; }
+    * nav .navbar {
+      color: white;
+      background-color: black;
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px; }
+      * nav .navbar .icon-nav {
+        padding: 20px;
+        cursor: pointer; }
+      * nav .navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding-left: 30px; }
+        * nav .navbar ul li {
+          padding-left: 20px;
+          padding-top: 20px;
+          cursor: pointer;
+          padding-top: 20px;
+          padding-right: 30px;
+          cursor: pointer; }
+          * nav .navbar ul li:hover {
+            background-color: gray; }
+          * nav .navbar ul li:hover ul {
+            display: block; }
+          * nav .navbar ul li ul {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            text-align: center;
+            padding-bottom: 10px;
+            display: none; }
+            * nav .navbar ul li ul li {
+              color: black; }
+              * nav .navbar ul li ul li:hover {
+                background-color: gray; }
+  * .portrait img {
+    width: 100%; }
+  * #cities {
+    background-color: black;
+    font-family: sans-serif;
+    padding-bottom: 10%; }
+    * #cities .city-title {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      line-height: 50px; }
+    * #cities .city-list {
+      color: gray;
+      background-color: white;
+      display: inline-block;
+      width: 100%; }
+      * #cities .city-list ul li {
+        height: 50px;
+        list-style: none;
+        padding: 20px 30px; }
+    * #cities .city {
+      margin: 5px; }
+      * #cities .city .city-image img {
+        width: 100%; }
+      * #cities .city .city-info {
+        padding: 15px;
+        background-color: white; }
+        * #cities .city .city-info h1, * #cities .city .city-info p {
+          margin-bottom: 15px; }
+        * #cities .city .city-info .city-date {
+          color: gray; }
+  * #contact {
+    padding: 20px 0; }
+    * #contact .contact-title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      line-height: 50px; }
+      * #contact .contact-title h1 {
+        letter-spacing: 10px;
+        font-size: xx-large; }
+      * #contact .contact-title h5 {
+        color: gray; }
+    * #contact .contact-info .map,
+    * #contact .contact-info .phone,
+    * #contact .contact-info .envelop {
+      display: flex;
+      margin-top: 15px; }
+    * #contact .contact-info h1 {
+      margin: 5px; }
+    * #contact .contact-info h2 {
+      font-size: 20px; }
+    * #contact .xx-contact {
+      display: flex; }
+      * #contact .xx-contact input {
+        height: 50px;
+        padding: 20px; }
+      * #contact .xx-contact .x-contact {
+        display: flex; }
+      * #contact .xx-contact .contact-message {
+        display: flex;
+        flex-direction: column; }
+  * .map img {
+    width: 100%; }
+  * .social {
+    text-align: center;
+    color: gray;
+    margin-top: 15px;
+    font-size: x-large; }
+    * .social h4 {
+      text-align: center; }
+  * .city .city-info button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border: none; }
+  * .hamburger {
+    display: none; }
+
+/*common*/
+.col-1 {
+  width: calc(100% / 12 * 1); }
+
+.col-2 {
+  width: calc(100% / 12 * 2); }
+
+.col-3 {
+  width: calc(100% / 12 * 3); }
+
+.col-4 {
+  width: calc(100% / 12 * 4); }
+
+.col-5 {
+  width: calc(100% / 12 * 5); }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: calc(100% / 1 * 7); }
+
+.col-8 {
+  width: calc(100% / 12 * 8); }
+
+.col-9 {
+  width: calc(100% / 12 * 9); }
+
+.col-10 {
+  width: calc(100% / 12 * 10); }
+
+.col-11 {
+  width: calc(100% / 12 * 11); }
+
+.col-12 {
+  width: 100%; }
+
+@media screen and (max-width: 1250px) {
+  .col-xl-1 {
+    width: 8.33333%; }
+  .col-xl-2 {
+    width: 16.66667%; }
+  .col-xl-3 {
+    width: 25%; }
+  .col-xl-4 {
+    width: 33.33333%; }
+  .col-xl-5 {
+    width: 41.66667%; }
+  .col-xl-6 {
+    width: 50%; }
+  .col-xl-7 {
+    width: 58.33333%; }
+  .col-xl-8 {
+    width: 66.66667%; }
+  .col-xl-9 {
+    width: 75%; }
+  .col-xl-10 {
+    width: 83.33333%; }
+  .col-xl-11 {
+    width: 91.66667%; }
+  .col-xl-12 {
+    width: 100%; } }
+
+@media screen and (max-width: 1050px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; } }
+
+@media screen and (max-width: 650px) {
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; }
+  .disapear {
+    display: none; }
+  .hamburger {
+    display: block; }
+  .xx-contact {
+    display: flex;
+    flex-direction: column; }
+    .xx-contact .x-contact {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .xx-contact .x-contact .contact-name {
+        width: 100%;
+        margin-bottom: 10px; }
+    .xx-contact .contact-info {
+      padding: 10px 0; }
+  .city-list {
+    width: 100%; }
+  .city {
+    margin-bottom: 50px; }
+    .city .city-image {
+      text-align: center; }
+  .x-contact .contact-email input {
+    width: 100%; }
+  .container {
+    width: 100%; }
+    .container .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+  .band-portrait-image {
+    text-align: center; }
+  .contact-name input {
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-12 {
+    width: 100%; } }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
+/* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
